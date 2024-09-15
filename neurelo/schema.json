@@ -1,0 +1,297 @@
+{
+  "objects": {
+    "data_angsuran_piutang": {
+      "properties": {
+        "id": {
+          "type": "string",
+          "sourceName": "_id",
+          "sourceType": "ObjectId",
+          "default": {
+            "function": "auto"
+          },
+          "identifier": true
+        },
+        "id_nota": {
+          "type": "string"
+        },
+        "id_piutang": {
+          "type": "string"
+        },
+        "indikator": {
+          "type": "string"
+        },
+        "indikator_update": {
+          "type": "string"
+        },
+        "jumlah_angsuran": {
+          "type": "integer"
+        },
+        "keterangan": {
+          "type": "string"
+        },
+        "tanggal": {
+          "type": "string"
+        }
+      }
+    },
+    "data_barang": {
+      "properties": {
+        "harga_jual": {
+          "type": [
+            "array",
+            "boolean",
+            "integer",
+            "number",
+            "object",
+            "string"
+          ],
+          "description": "Multiple data types found: [Float, Int] across 1000 sampled entries",
+          "format": "json"
+        },
+        "id": {
+          "type": "string",
+          "sourceName": "_id",
+          "sourceType": "ObjectId",
+          "default": {
+            "function": "auto"
+          },
+          "identifier": true
+        },
+        "indikator": {
+          "type": "string"
+        },
+        "indikator_update": {
+          "type": "string"
+        },
+        "jenis": {
+          "type": "string"
+        },
+        "kepemilikan_properti": {
+          "type": "string",
+          "nullable": true
+        },
+        "keterangan": {
+          "type": "string"
+        },
+        "nama_barang": {
+          "type": "string"
+        },
+        "satuan": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "data_customer": {
+      "properties": {
+        "alamat": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string",
+          "sourceName": "_id",
+          "sourceType": "ObjectId",
+          "default": {
+            "function": "auto"
+          },
+          "identifier": true
+        },
+        "indikator": {
+          "type": "string"
+        },
+        "indikator_update": {
+          "type": "string"
+        },
+        "keterangan": {
+          "type": "string"
+        },
+        "nama": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "telp": {
+          "type": "string"
+        }
+      }
+    },
+    "data_image": {
+      "properties": {
+        "id": {
+          "type": "string",
+          "sourceName": "_id",
+          "sourceType": "ObjectId",
+          "default": {
+            "function": "auto"
+          },
+          "identifier": true
+        }
+      }
+    },
+    "data_penjualan_detail": {
+      "properties": {
+        "harga_jual": {
+          "type": "integer"
+        },
+        "id": {
+          "type": "string",
+          "sourceName": "_id",
+          "sourceType": "ObjectId",
+          "default": {
+            "function": "auto"
+          },
+          "identifier": true
+        },
+        "id_barang": {
+          "type": "string"
+        },
+        "id_nota": {
+          "type": "string"
+        },
+        "indikator": {
+          "type": "string"
+        },
+        "indikator_update": {
+          "type": "string"
+        },
+        "jenis": {
+          "type": "string"
+        },
+        "jumlah_barang": {
+          "type": "integer"
+        },
+        "nama_barang": {
+          "type": "string"
+        },
+        "nomor_nota": {
+          "type": "string"
+        },
+        "satuan": {
+          "type": "string",
+          "nullable": true
+        },
+        "total": {
+          "type": "integer"
+        }
+      }
+    },
+    "data_penjualan_rekap": {
+      "properties": {
+        "alamat": {
+          "type": "string"
+        },
+        "diskon": {
+          "type": "integer"
+        },
+        "grand_total": {
+          "type": "integer"
+        },
+        "id": {
+          "type": "string",
+          "sourceName": "_id",
+          "sourceType": "ObjectId",
+          "default": {
+            "function": "auto"
+          },
+          "identifier": true
+        },
+        "id_customer": {
+          "type": "string"
+        },
+        "indikator": {
+          "type": "string"
+        },
+        "indikator_update": {
+          "type": "string"
+        },
+        "jenis_transaksi": {
+          "type": "string"
+        },
+        "nama_customer": {
+          "type": "string"
+        },
+        "nomor_nota": {
+          "type": "string"
+        },
+        "pembayaran": {
+          "type": "integer"
+        },
+        "pph": {
+          "type": "integer"
+        },
+        "ppn": {
+          "type": "integer"
+        },
+        "sisa": {
+          "type": "integer"
+        },
+        "tanggal": {
+          "type": "string",
+          "format": "date-time",
+          "sourceType": "Date"
+        },
+        "total_nota": {
+          "type": "integer"
+        }
+      }
+    },
+    "data_piutang": {
+      "properties": {
+        "id": {
+          "type": "string",
+          "sourceName": "_id",
+          "sourceType": "ObjectId",
+          "default": {
+            "function": "auto"
+          },
+          "identifier": true
+        },
+        "id_customer": {
+          "type": "string"
+        },
+        "id_nota": {
+          "type": "string"
+        },
+        "indikator": {
+          "type": "string"
+        },
+        "indikator_update": {
+          "type": "string"
+        },
+        "keterangan": {
+          "type": "string"
+        },
+        "nama_customer": {
+          "type": "string"
+        },
+        "nomor_nota": {
+          "type": "string"
+        },
+        "tanggal": {
+          "type": "string",
+          "format": "date-time",
+          "sourceType": "Date"
+        },
+        "total_nota": {
+          "type": "integer"
+        }
+      }
+    },
+    "data_vendor": {
+      "properties": {
+        "id": {
+          "type": "string",
+          "sourceName": "_id",
+          "sourceType": "ObjectId",
+          "default": {
+            "function": "auto"
+          },
+          "identifier": true
+        }
+      }
+    }
+  }
+}
